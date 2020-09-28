@@ -1,0 +1,10 @@
+<ng-container *ngIf="navList != null">
+  <nav>
+    <ul>
+      <li *ngFor="let nav of navList; trackBy: trackById" [routerLink]="[nav.routerLink]" [routerLinkActive]="['active']">
+        {{ nav.name }}
+      </li>
+      <!-- <li [routerLink]="['/app-authorize/signout']">SignOut</li> -->
+    </ul>
+  </nav>
+</ng-container>

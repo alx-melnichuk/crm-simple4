@@ -1,0 +1,21 @@
+/*# sourceURL=t-l-middle.component.scss */
+
+:host {
+  display: block;
+  padding: 0.3em 0.3em;
+    
+  .t-l-m-wrap {
+    height: 39em;
+    overflow: auto;
+  }
+  table {
+    width: 100%;
+    font-size: inherit;
+  }
+  .mat-header-cell, .mat-cell, .mat-footer-cell {
+    font-size: inherit;
+  }
+  tr.mat-row {
+    cursor: pointer;
+  }
+}
