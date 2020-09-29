@@ -2,7 +2,7 @@ import { RB_LM_TASK } from '../../_consts/app.consts';
 
 export class Tracing {
   public static log(message?: any, ...optionalParams: any[]): void {
-    console.log('%capp-task: ' + message, 'color: Green; font-weight: bold', ...optionalParams);
+    console.log('%clm-task: ' + message, 'color: Green; font-weight: bold', ...optionalParams);
   }
 }
 

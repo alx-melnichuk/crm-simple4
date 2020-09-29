@@ -130,14 +130,6 @@ $ npx ng generate module lm-client --routing=true --route=lm-client --module=app
 
 Создадим компоненты для отображения списка клиентов. Каждый компонент имеет свой модуль, в котором описываются в списке импорта все требуемые для работы сторонние модули. Наличие у компонента модуля делает его самодостаточным и готовым к использованию.
 
-После открытия файла _/src/app/app-routing.module.ts_ в редакторе кода _VSCode_ возникла ошибка:
-
-```
-Dynamic import is only supported when '--module' flag is 'commonjs' or 'esNext'.ts (1323)
-```
-Что бы исправить данную ошибку открываем файл _./tsconfig.json_ и меняем строку:
-`"module": "es2020"` на новое значение `"module": "esNext"`.
-
 ### Создание перехватчика по клиентах модуля _lm-client_.
 
 У нас отсутствует BackEnd и для ответа сервера используем перехватчик, которые симулируют работу сервера API. Создадим файл, в котором будет логика работы с данными о клиентах.
@@ -438,3 +430,18 @@ $ npx ng generate component /task-view/t-v-middle --export=true
 ```bash
 $ npx ng generate service /task-view/_resolvers/task-view-resolver
 ```
+
+Запустим и проверим работоспособность всего приложения командой:
+```bash
+$ npx ng serve --port 4250
+```
+И в браузере проверить по ссылке:  [http://localhost:4250/lm-client/list](http://localhost:4250/lm-client/list)
+
+
+
+Исходный код можно скачать [github-crm-simple4](https://github.com/alx-melnichuk/crm-simple4). (Запустите  `npm install` перед запуском приложения.)
+
+Запустить проект на сайте StackBlitz можно по ссылке [https://stackblitz.com/github/alx-melnichuk/crm-simple4](https://stackblitz.com/github/alx-melnichuk/crm-simple4).
+
+Запустить проект, развернутый на StackBlitz [https://yqnimlywn.github.stackblitz.io](https://yqnimlywn.github.stackblitz.io).
+

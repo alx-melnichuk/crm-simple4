@@ -2,7 +2,7 @@ import { RB_LM_CLIENT } from '../../_consts/app.consts';
 
 export class Tracing {
   public static log(message?: any, ...optionalParams: any[]): void {
-    console.log('%capp-client: ' + message, 'color: DodgerBlue; font-weight: bold', ...optionalParams);
+    console.log('%clm-client: ' + message, 'color: DodgerBlue; font-weight: bold', ...optionalParams);
   }
 }
 
