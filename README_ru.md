@@ -443,5 +443,3 @@ $ npx ng serve --port 4250
 
 Запустить проект на сайте StackBlitz можно по ссылке [https://stackblitz.com/github/alx-melnichuk/crm-simple4](https://stackblitz.com/github/alx-melnichuk/crm-simple4).
 
-Запустить проект, развернутый на StackBlitz [https://yqnimlywn.github.stackblitz.io](https://yqnimlywn.github.stackblitz.io).
-
