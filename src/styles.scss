@@ -2,3 +2,23 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #008996;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
